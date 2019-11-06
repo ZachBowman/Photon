@@ -22,11 +22,4 @@ void Transparent_Bitmap::render (HDC temp_hdc, HDC dest_hdc, int source_x, int s
   BitBlt (dest_hdc, dest_x, dest_y, temp_bitmap.bmWidth, temp_bitmap.bmHeight, temp_hdc, 0, 0, SRCAND);
   SelectObject (temp_hdc, sprite);
   BitBlt (dest_hdc, dest_x, dest_y, temp_bitmap.bmWidth, temp_bitmap.bmHeight, temp_hdc, 0, 0, SRCINVERT);
-
-  //SelectObject (temp_hdc, sprite);
-  //BitBlt (dest_hdc, dest_x, dest_y, temp_bitmap.bmWidth, temp_bitmap.bmHeight, temp_hdc, 0, 0, SRCINVERT);
-  //SelectObject (temp_hdc, mask);
-  //BitBlt (dest_hdc, dest_x + 100, dest_y, temp_bitmap.bmWidth, temp_bitmap.bmHeight, temp_hdc, 0, 0, SRCAND);
-  //SelectObject (temp_hdc, sprite);
-  //BitBlt (dest_hdc, dest_x + 200, dest_y, temp_bitmap.bmWidth, temp_bitmap.bmHeight, temp_hdc, 0, 0, SRCINVERT);
   }

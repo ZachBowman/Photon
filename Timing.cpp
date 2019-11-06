@@ -7,6 +7,7 @@ Timing::Timing (int steps_per_second)
   {
   target_steps_per_second = steps_per_second;
   target_milliseconds_per_step = 1000 / target_steps_per_second;
+  last_step_tick = 0;
   }
 
 Timing::~Timing () {}
